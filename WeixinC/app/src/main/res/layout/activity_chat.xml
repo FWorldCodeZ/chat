@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#f4eded">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+
+        >
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="name"
+      android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_add"
+        android:layout_margin="10dip"
+
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+<LinearLayout
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#f4eded">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <forever.zybelieve.com.weixinc.ListViewHeight
+            android:id="@+id/message_bubble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#0000"
+            android:dividerHeight="8dp"
+            android:scrollbars="none"/>
+    </ScrollView>
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/input_message"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:gravity="center|left"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/send_message_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="64dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="4dp"
+        android:background="#38a4e7"
+        android:text="发送"
+        android:textColor="#fffefe"/>
+</LinearLayout>
+
+</LinearLayout>

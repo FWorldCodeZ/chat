@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="forever.zybelieve.com.weixinc.NavigationUser"
+    android:id="@+id/linearLayout1"  >
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/onselfImage"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20px"
+        android:scaleType="fitXY"
+        android:onClick="head_headimgsmall"
+        android:src="@drawable/no2" />
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:layout_toRightOf="@+id/onselfImage"
+        android:paddingLeft="20dip"
+        android:text="昵称"
+        android:textColor="#39daf7"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:layout_marginLeft="10dip"
+        android:id="@+id/mySingle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onselfImage"
+        android:text="个性签名"
+        android:textColor="#39daf7"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_marginLeft="20dip"
+        android:id="@+id/mySingleContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mySingle"
+        android:layout_centerHorizontal="true"
+        android:text="展示你的个性" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/mySingleContent"
+        android:layout_marginTop="5dip"
+        android:background="#39daf7" />
+
+    <forever.zybelieve.com.weixinc.ListViewHeight
+        android:id="@+id/listInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line"
+        android:divider="#39daf7"
+        android:dividerHeight="1px"
+        android:paddingRight="1px" >
+    </forever.zybelieve.com.weixinc.ListViewHeight>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/listInfo"
+        android:layout_marginTop="5dip"
+        android:background="#39daf7" />
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/send_message_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送消息"
+        android:layout_below="@+id/scroll"
+        android:background="#69b88d"/>
+</RelativeLayout>

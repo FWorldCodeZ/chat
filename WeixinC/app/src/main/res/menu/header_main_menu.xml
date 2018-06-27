@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="forever.zybelieve.com.weixinc.MainCustomerUser"
+    >
+    <item
+        android:id="@+id/add_button"
+        android:icon="@drawable/icon_add"
+        android:orderInCategory="100"
+        android:title="搜索"
+        app:showAsAction="always"
+        />
+    <item
+        android:orderInCategory="100"
+        android:id="@+id/overflow_menus"
+        android:actionProviderClass="@android:style/Widget.Holo.ActionButton.Overflow"
+        android:showAsAction="always"
+        android:title="1234">
+         <menu>
+    <item
+        android:id="@+id/menu_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_dashboard"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_notifications"
+        app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>
